@@ -10,6 +10,7 @@
    justify-content:center;
     align-items:center;
     background:blue;
+    opacity:0.4;
 }
 .container form{
     background: burlywood;
