@@ -19,18 +19,18 @@ body{
 }
 @keyframes animate{
     0%
-      {background-image:url(avenue3.jpg);
+      {background-image:url("avenue3.jpg");
      }
     
     35%
-       {background-image:url(ocean-town.jpg);
+       {background-image:url("ocean-town.jpg");
      }       
     70% 
-   {background-image:url(bird.jpg);
+   {background-image:url("bird.jpg");
       }
    
    100%
-       { background-image:url(avenue.jpg);
+       { background-image:url(:avenue.jpg");
    }
   }
 #into{
