@@ -1,0 +1,63 @@
+#optional{
+    background:rgba(143,135,63,0.9);
+    margin-top:29%;
+}
+#optional h2,h3{
+    color:white;
+}
+textarea{
+    margin-left:15%;
+    border-radius:20px;
+    outline:none;
+    background:rgba(130,19,89,0.8);
+    color:burlywood;
+    font-size:19px;
+}
+::placeholder{
+ color:lightyellow;   
+}
+@media screen and (max-width:700px){
+    textarea{
+       font-size:15px;
+        width:70%;
+        }
+    #optional{
+        margin:0px;
+    }
+}
+#footer{
+    background:url("footer.jpg");
+    background-size:cover;
+    bacground-position:center;
+    background-repeat: norepeat;
+    height:390px;
+    }
+#footer .fa{
+    color:white;
+    width:65px;
+    height:65px;
+    text-align:center;
+    line-height:50px;
+    border-radius:30px;
+    box-shadow:5px 5px 14px 5px #fce;
+    background:purple;
+    position:relative;
+    top:300px;
+    margin-left:4%;
+    cursor:pointer;   
+}
+.fa:hover{
+    transform:scale(1.5,1.5)
+}
+#footer a{
+    text-decoration:none;
+}
+#footer{
+      text-align:center;
+}
+#footer h2{
+    position:absolute;
+    height:100px;
+    color:white;
+    margin:65px 0px 0px 15px;
+    }

@@ -1,0 +1,170 @@
+@import url("form.css");
+@import url("text.css");
+html,body{
+   height:100%;
+   width:100%;
+}
+body{
+   animation-name:animate;
+    animation-duration:20s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    padding:0px;
+    margin:0px;
+    
+}
+@keyframes animate{
+    0%
+      {background-image:url(avenue3.jpg);
+     }
+    
+    35%
+       {background-image:url(ocean-town.jpg);
+     }       
+    70% 
+   {background-image:url(bird.jpg);
+      }
+   
+   100%
+       { background-image:url(avenue.jpg);
+   }
+  }
+#into{
+   display:none;
+}
+.logo{
+   float:right;
+   color:white;
+   text-shadow:8px 8px black;
+   letter-spacing: 5px;
+   line-height:29px; 
+ }
+.design{
+   height: 50px;
+   background-color:rgba(45,00,90,0.7);
+   line-height:46px;   
+   position:fixed;
+   width:100%;
+}
+
+.design ul{
+     padding:0px;
+    margin:0px;
+   
+    }
+.design ul li{
+    list-style:none;
+    text-align:center;   
+   display:inline-block;
+   width:100px;
+   border-radius:5px; 
+   line-height:normal;
+}  
+.design ul li a{
+    text-decoration: none;
+    color:#ffffff;   
+}
+.design ul ul{
+    display: none;
+   margin:0px;
+   padding:0px;
+    position:absolute;
+   background-color:rgba(45,00,90,0.5); 
+}
+.design ul ul li{
+    border-left:5px solid transparent;
+    width:140px;
+    margin-top:10px;
+    border-radius:0px;
+    text-align:center;
+ border-bottom:5px solid navy;  
+}
+.design ul li:hover{
+    background-color:red;
+    transition:0.5s;
+}
+.design ul li:hover > ul{
+    display:block;
+  
+}
+.design ul li ul li:hover{
+    border-left:5px solid orange;
+  
+}
+@media screen and (max-width:700px){
+   .design{
+      height:auto;
+      padding-top:30px;
+      box-sizing:border-box;
+      position:fixed;
+      width:100%;
+    }
+   .design ul li{
+      display:flex;
+      flex-direction:column;
+      margin:20px 0px 0px 45px;
+      
+   }
+   .left{
+      left:15%;
+   }
+   .left2{
+      left:15%;
+   }
+   .logo{
+      position:absolute;
+      top:80%;
+      left:40%;
+      float:none;
+      margin:0px;
+      padding:0px; 
+   }
+   .label{
+      position:absolute;
+      top:12px;
+      left:20px;
+      height:25px;
+      width:25px;
+      z-index:5;
+   }
+ 
+  .label div{
+      background:white;
+     padding:1px; 
+   }
+   .two,.three{
+      margin-top:5px;
+   }
+   header{
+      transform:translatey(-80%);
+      transition:transform 0.7s ease-in-out;
+   }  
+   header nav ul li{
+      visibility:hidden;
+   }
+   #into:checked~header{
+      transform:translatey(0%);
+      line-height:400px;
+   }
+   #into:checked~ header nav ul li{
+      visibility:visible;
+   }
+   #into:checked~header .logo{
+     top:10%;
+   }
+   ul li:first-child{
+      margin-top:0px;
+   }
+  .design ul ul{
+      left:133px;
+   }
+   .design ul ul li{
+      margin:auto;
+   }
+}
+
+
